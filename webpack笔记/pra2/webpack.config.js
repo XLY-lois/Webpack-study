@@ -3,6 +3,7 @@
 
 const path = require('path');
 const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     //入口
@@ -41,12 +42,31 @@ module.exports = {
                     //将 less -> CSS
                     'less-loader',
                 ]
-            }
+            },
+            //图片资源
+            {
+                test:/\.(jpg|png|gif)$/,
+                loader:'url-loader',
+                options:{
+                    //图片大小小于8kb就会被base64处理
+                    //优点 减少请求数量（减轻服务器的压力）
+                    //缺点 图片体积会大一点 请求速度就会慢一些
+                    limit:8*1024,//8kb
+                }
+            },
+            //处理html中的图片
+            {
+                test:/\.html$/,//专门处理html中的图片引入 从而能被url-loader处理
+                loader:'html-loader'
+            },
         ]
     },
     //插件配置
     plugins:[
-        //...
+        //功能 默认创建一个空的HTML 文件 并引入所有打包后的资源
+        new HtmlWebpackPlugin({
+            template:'./src/index.html',//复制这个文件作为上面创建的html的模板
+        })
     ],
     //模式
     mode:'development'

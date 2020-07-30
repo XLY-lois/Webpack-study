@@ -44,7 +44,7 @@
 - 新建文件 webpack.config.js
 - 配置config
    ```
-   //webpack配置文件
+    //webpack配置文件
     //由于是基于node的 所有采用commenjs语法
 
     const path = require('path');
@@ -61,8 +61,10 @@
         path:resolve(__dirname,'build'),//__dirname是node中path模块提供的 代表当前文件目录绝对路径
     },
     //loader配置
+    //不同的文件要配置不同的loader
     module:{
         rules:[
+            //CSS
             {
                 //匹配哪些文件
                 test:/\.css$/,//遍历文件 一旦发现有.css结尾的文件便进行以下处理
@@ -74,19 +76,81 @@
                     //将css以字符串形式变成commenjs模块加载到js中
                     'css-loader'
                 ]
+            },
+            //less
+            {
+                test:/\.less$/,
+                use:[
+                    'style-loader',
+                    //将 CSS -> JS
+                    'css-loader',
+                    //将 less -> CSS
+                    'less-loader',
+                ]
             }
         ]
     },
     //插件配置
-    plugings:[
+    plugins:[
         //...
     ],
     //模式
-    mode:'development'      
+    mode:'development'
     }
    ```
 
 - `npm i css-loader style-loader`
 - 命令行执行 `webpack` 即可打包
+
+##### 打包html
+- 下载包 `npm install html-webpack-plugin -D`
+- 引入调用插件 在 webpack.config.js 中 
+```
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+//some code
+
+ //插件配置
+    plugins:[
+        //功能 默认创建一个空的HTML 文件 并引入所有打包后的资源
+        new HtmlWebpackPlugin({
+            template:'./src/index.html',//复制这个文件作为上面创建的html的模板
+        })
+    ],
+```
+- 打包 命令行`webpack`
+   此时 在build目录下会自动生成一个新的index.html 并且这个新的文件会自动引入build.js
+   所以要记住 自己写的html中不能引入js 重复引入会出问题
+
+##### 打包图片资源
+1. 
+- 装包 `npm i file-loader url-loader -D`
+   前者是后者的依赖 所以要装两个包
+- webpack.config.js 中的 module加入
+- 但是这种方法只能处理css中引进的图片 比方说bg-img url(...)
+```
+ //图片资源 
+            {
+                test:/\.(jpg|png|gif)$/,
+                loader:'url-loader',
+                options:{
+                    //图片大小小于8kb就会被base64处理
+                    //优点 减少请求数量（减轻服务器的压力）
+                    //缺点 图片体积会大一点 请求速度就会慢一些
+                    limit:8*1024,//8kb
+                }
+            }
+```
+
+2. 要处理html中标签引入的图片要这样做
+- 装包 `npm install html-loader -D`
+- webpack.config.js 中加入
+```
+//处理html中的图片
+            {
+                test:/\.html$/,//专门处理html中的图片引入 从而能被url-loader处理
+                loader:'html-loader'
+            },
+```
+- 此时再打包 再build中的index.html中就会有img标签
 ---
 
