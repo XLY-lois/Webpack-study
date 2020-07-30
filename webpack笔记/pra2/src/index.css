@@ -1,0 +1,9 @@
+html,
+body {
+  background-color: pink;
+  height: 100%;
+}
+html #title,
+body #title {
+  color: red;
+}
