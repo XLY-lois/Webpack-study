@@ -86,15 +86,74 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/index.less":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/index.less ***!
-  \*****************************************************************************************************/
+/***/ "./iconfont/iconfont.css":
+/*!*******************************!*\
+  !*** ./iconfont/iconfont.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./iconfont.css */ \"./node_modules/css-loader/dist/cjs.js!./iconfont/iconfont.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./iconfont/iconfont.css?");
+
+/***/ }),
+
+/***/ "./iconfont/iconfont.eot?t=1596158488358":
+/*!***********************************************!*\
+  !*** ./iconfont/iconfont.eot?t=1596158488358 ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _img_img1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/img1.jpg */ \"./src/img/img1.jpg\");\n// Imports\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_img_img1_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"html,\\nbody {\\n  background-color: pink;\\n  height: 100%;\\n}\\nhtml #title,\\nbody #title {\\n  color: red;\\n}\\nhtml #box,\\nbody #box {\\n  width: 400px;\\n  height: 300px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  background-repeat: no-repeat;\\n  background-size: 100% 100%;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"e7879ab12fcf2c6166936b0a53801c79.eot\");\n\n//# sourceURL=webpack:///./iconfont/iconfont.eot?");
+
+/***/ }),
+
+/***/ "./iconfont/iconfont.svg?t=1596158488358":
+/*!***********************************************!*\
+  !*** ./iconfont/iconfont.svg?t=1596158488358 ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"066441075b41ac8edb043b4754a981c6.svg\");\n\n//# sourceURL=webpack:///./iconfont/iconfont.svg?");
+
+/***/ }),
+
+/***/ "./iconfont/iconfont.ttf?t=1596158488358":
+/*!***********************************************!*\
+  !*** ./iconfont/iconfont.ttf?t=1596158488358 ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"f052076be59feca7788d00708dca423a.ttf\");\n\n//# sourceURL=webpack:///./iconfont/iconfont.ttf?");
+
+/***/ }),
+
+/***/ "./iconfont/iconfont.woff?t=1596158488358":
+/*!************************************************!*\
+  !*** ./iconfont/iconfont.woff?t=1596158488358 ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"335eec7feb956b0104de4238b48af7e2.woff\");\n\n//# sourceURL=webpack:///./iconfont/iconfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./iconfont/iconfont.css":
+/*!*********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./iconfont/iconfont.css ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _iconfont_eot_t_1596158488358__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./iconfont.eot?t=1596158488358 */ \"./iconfont/iconfont.eot?t=1596158488358\");\n/* harmony import */ var _iconfont_woff_t_1596158488358__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./iconfont.woff?t=1596158488358 */ \"./iconfont/iconfont.woff?t=1596158488358\");\n/* harmony import */ var _iconfont_ttf_t_1596158488358__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./iconfont.ttf?t=1596158488358 */ \"./iconfont/iconfont.ttf?t=1596158488358\");\n/* harmony import */ var _iconfont_svg_t_1596158488358__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./iconfont.svg?t=1596158488358 */ \"./iconfont/iconfont.svg?t=1596158488358\");\n// Imports\n\n\n\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_iconfont_eot_t_1596158488358__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_iconfont_eot_t_1596158488358__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { hash: \"#iefix\" });\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_iconfont_woff_t_1596158488358__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_iconfont_ttf_t_1596158488358__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_iconfont_svg_t_1596158488358__WEBPACK_IMPORTED_MODULE_5__[\"default\"], { hash: \"#iconfont\" });\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"@font-face {font-family: \\\"iconfont\\\";\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"); /* IE9 */\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \") format('embedded-opentype'), \\n  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQEAAsAAAAACNwAAAO2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqEaIQhATYCJAMUCwwABCAFhG0HWhu/BxHVmwfJfhymW4xbM2f55Uj19h0EpTP3dCdHlh+JQ0xyiLAimp6xAuzS/UQBYNZmp8+oCEN3jAf/zVM2lJ7bb/9zzHTRNrD8tjXIppYdtDfA0S6Azg47gVowEk/Ubxi7vMjbIQCTKDIQDU2demGg0PcTgJg0fuxwjIQNVUEWGEZHwakKsQUdQ1urPQA2ex8vfpEnDNDQJfqh3cY0jqLma/7XcmnZ1iAHgXw4D8DOAglkAArEjELfJGSQy0BiylsragATAw1tqM0Kv5Z8LbdtItWGDKbxDw8EGhIFwoGu80DYmryCr/kWEwK+FjKhwdcSJiR8LVc8GJ2O9jYBb+AaCCcwJQxZrpAop4euibCQxuWdynfs1Wfu5+ufWk/6vHjR6+XL3q9f9331qp9pjjrsi+MvE3ngxZAXb3q9fNv79fu+r94t9Fl3BmWddXkKD91beawL6FXZ13P9eaG7z41y7zu17sQe9p6lrx9h7T25/vR+se/cujOTizrmmpoV2Lu6z9CkPq+Xe794sWDKK4xcd+aMdfas6/Q9992RJ25bd9b7R4zp492rr/uc6dXHxDVY6e3jOdC0o63ePQyulP/1on9/US92JPZYVH7nmNebH0VFluuYV1A+7Y53u4eqM8SOGI1xnZRI8PL1qrEyMTVwX6lfc/jwx527/At+O7ja8+qksElXPeXZlLNV/qJI1KWIPlwT47Xm3r2PV69Ebzgm37yRxwyxI7FVUZuZX3FHtbcrqL6DJVCFj2XpUt8nnnGeT3yP5BflJ4CkRudR8u/l5t1b9Hket5oUu3RGTe2W6L81t0OH/uwYLpiHfri8r30B+4c8IgH7vkRDNWDb0i3/j7/hiOvLvqHeFf8MlwLgfev2EC9q31c0l71kPbL8b5A3nFGKUrfrSpq0ZJJfpyZmQ5OXTOAfCPnxaRhDYOMMCIyEnIFGByJBYpCAVNgM0HFRAA4MqsEkneazXfgzA4lQTiCNlQAEPlwGDS/ugcSHh0iF/Qg6QfwBBz5Cgkkf4X9Jl0mSmHy9oSF6af8ydceuppPeb75heK+NxZUe5QULU1KyOE0Xa+ywIY4InyEnVdSOTSpwN6zrIacdMzrGI3mWSaJF9xR3x+Y89YaG6IX2L0zdsauzmD7z/jcM77Wxiqmy4AsWpo0LGTFpA2St2xtNXcrW4TPkkIr3Ujs2oYIerEbuEM7inWZ0jBk7ZM6SBM3Tprp4esN2j9cBJvr2utCEFErowoHz4OMRES5LFsxkVCj3Fs4BAAA=') format('woff2'),\\n  url(\" + ___CSS_LOADER_URL_REPLACEMENT_2___ + \") format('woff'),\\n  url(\" + ___CSS_LOADER_URL_REPLACEMENT_3___ + \") format('truetype'), \\n  url(\" + ___CSS_LOADER_URL_REPLACEMENT_4___ + \") format('svg'); /* iOS 4.1- */\\n}\\n\\n.iconfont {\\n  font-family: \\\"iconfont\\\" !important;\\n  font-size: 16px;\\n  font-style: normal;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale;\\n}\\n\\n.icon-icon-test:before {\\n  content: \\\"\\\\e633\\\";\\n}\\n\\n.icon-icon-test1:before {\\n  content: \\\"\\\\e635\\\";\\n}\\n\\n.icon-icon-test2:before {\\n  content: \\\"\\\\e638\\\";\\n}\\n\\n.icon-icon-test3:before {\\n  content: \\\"\\\\e63b\\\";\\n}\\n\\n\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./iconfont/iconfont.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -146,17 +205,6 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/data.json":
-/*!***********************!*\
-  !*** ./src/data.json ***!
-  \***********************/
-/*! exports provided: name, age, default */
-/***/ (function(module) {
-
-eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"jack\\\",\\\"age\\\":18}\");\n\n//# sourceURL=webpack:///./src/data.json?");
-
-/***/ }),
-
 /***/ "./src/img/img1.jpg":
 /*!**************************!*\
   !*** ./src/img/img1.jpg ***!
@@ -165,7 +213,7 @@ eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"jack\\\",\\\"age\\\":18}\"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"93436efb56096d17e43e31114944abaf.jpg\");\n\n//# sourceURL=webpack:///./src/img/img1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"data:image/jpeg;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiOTM0MzZlZmI1NjA5NmQxN2U0M2UzMTExNDk0NGFiYWYuanBnIjs=\");\n\n//# sourceURL=webpack:///./src/img/img1.jpg?");
 
 /***/ }),
 
@@ -188,18 +236,7 @@ eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtim
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data.json */ \"./src/data.json\");\nvar _data_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./data.json */ \"./src/data.json\", 1);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_2__);\n//入口文件\r\n//注意在使用指令之前要全局安装webpack\r\n//1. 开发环境运行指令（其实也可以自己在package.json中修改）：webpack ./src/index.js -o ./build/build.js --mode=development\r\n//   意思就是将入口文件index.js打包输出到builde文件夹下的build.js\r\n//2. 生成环境指令：webpack ./src/index.js -o ./build/build.js --mode=production\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(_data_json__WEBPACK_IMPORTED_MODULE_0__);\r\n\r\nfunction add(x,y){\r\n    return x+y;\r\n}\r\n\r\nconsole.log(add(1,2));\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/index.less":
-/*!************************!*\
-  !*** ./src/index.less ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/index.less\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/index.less?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _iconfont_iconfont_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../iconfont/iconfont.css */ \"./iconfont/iconfont.css\");\n/* harmony import */ var _iconfont_iconfont_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_iconfont_iconfont_css__WEBPACK_IMPORTED_MODULE_1__);\n//入口文件\r\n//注意在使用指令之前要全局安装webpack\r\n//1. 开发环境运行指令（其实也可以自己在package.json中修改）：webpack ./src/index.js -o ./build/build.js --mode=development\r\n//   意思就是将入口文件index.js打包输出到builde文件夹下的build.js\r\n//2. 生成环境指令：webpack ./src/index.js -o ./build/build.js --mode=production\r\n\r\n// import data from './data.json'\r\n\r\n// import './index.less'\r\n\r\n\r\n// console.log(data);\r\n\r\nfunction add(x,y){\r\n    return x+y;\r\n}\r\n\r\nconsole.log(add(1,2));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

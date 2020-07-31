@@ -33,16 +33,16 @@ module.exports = {
                 ]
             },
             //less
-            {
-                test:/\.less$/,
-                use:[
-                    'style-loader',
-                    //将 CSS -> JS
-                    'css-loader',
-                    //将 less -> CSS
-                    'less-loader',
-                ]
-            },
+            // {
+            //     test:/\.less$/,
+            //     use:[
+            //         'style-loader',
+            //         //将 CSS -> JS
+            //         'css-loader',
+            //         //将 less -> CSS
+            //         'less-loader',
+            //     ]
+            // },
             //图片资源
             {
                 test:/\.(jpg|png|gif)$/,
@@ -59,6 +59,11 @@ module.exports = {
                 test:/\.html$/,//专门处理html中的图片引入 从而能被url-loader处理
                 loader:'html-loader'
             },
+             {//打包其他资源(排除css js html 之外的资源)
+                exclude:/\.(css|js|html)$/,
+                loader:'file-loader'
+    
+            }
         ]
     },
     //插件配置

@@ -152,5 +152,27 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
             },
 ```
 - 此时再打包 再build中的index.html中就会有img标签
+
+##### 打包其他资源（比如字体啊 字体啊 字体啊之类的）
+- congig中 的 module
+```
+ {//打包其他资源(排除css js html 之外的资源)
+                exclude:/\.(css|js|html)$/,
+                loader:'file-loader'
+    
+}
+```
+
+- src中的index.html
+```
+    <span class="iconfont icon-icon-test"></span>
+    <span class="iconfont icon-icon-test1"></span>
+    <span class="iconfont icon-icon-test2"></span>
+    <span class="iconfont icon-icon-test3"></span>
+```
+
+- src中的index.js 引包
+`import '../iconfont/iconfont.css'`
+- 别忘了把下载下来的iconfont文件放在这个目录里再引包哦
 ---
 

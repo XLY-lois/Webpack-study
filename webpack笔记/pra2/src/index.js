@@ -4,11 +4,12 @@
 //   意思就是将入口文件index.js打包输出到builde文件夹下的build.js
 //2. 生成环境指令：webpack ./src/index.js -o ./build/build.js --mode=production
 
-import data from './data.json'
+// import data from './data.json'
 import './index.css'
-import './index.less'
+// import './index.less'
+import '../iconfont/iconfont.css'
 
-console.log(data);
+// console.log(data);
 
 function add(x,y){
     return x+y;
